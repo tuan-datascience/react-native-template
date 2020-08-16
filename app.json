@@ -1,0 +1,12 @@
+{
+  "name": "ReactMaterial",
+  "displayName": "ReactMaterial",
+  "expo": {
+    "name": "ReactMaterial",
+    "slug": "ReactMaterial",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
