@@ -19,17 +19,20 @@
     /* Base directory to resolve non-absolute module names. */
     "paths": {
       "*": ["src/*"],
-      "resources": ["./resources"],
+      "resources/*": ["./resources/*"],
       "screens": ["src/screens"],
       "components/*": ["src/components/*"],
-      "navigation": ["src/navigation"],
-      "actions": ["./src/redux/actions"],
+      "navigation/*": ["src/navigation/*"],
+      "actions/*": ["./src/redux/actions/*"],
+
       "reducers": ["./src/redux/reducers"],
+      "reducers/*": ["./src/redux/reducers/*"],
+
       "stores": ["./src/redux/stores"],
-      "theme": ["./src/theme"],
-      "constants": ["./src/global/constansts"],
-      "types": ["./src/global/types"],
-      "utils": ["./src/global/utils"]
+      "theme/*": ["./src/theme/*"],
+      "constants/*": ["./src/global/constansts/*"],
+      "types/*": ["./src/global/types/*"],
+      "utils/*": ["./src/global/utils/*"]
     }
   }
 }

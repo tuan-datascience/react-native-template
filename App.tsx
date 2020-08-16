@@ -1,6 +1,15 @@
 import React from 'react';
-import { Container } from 'components/Layout';
+import { SafeAreaProvider } from 'react-native-safe-area-context';
+import { Provider } from 'react-redux';
+import Root from 'Root';
+import { getConfigStore } from 'stores';
 
 export default function App() {
-  return <Container />;
+  return (
+    <SafeAreaProvider>
+      <Provider store={getConfigStore()}>
+        <Root />
+      </Provider>
+    </SafeAreaProvider>
+  );
 }
