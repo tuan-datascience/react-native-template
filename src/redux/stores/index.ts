@@ -1,12 +1,8 @@
 import storeDev from './dev.store';
 import storeProd from './prod.store';
-import { IErrorState } from 'reducers/error.reducer';
-import { ILoadingState } from 'reducers/loading.reducer';
+import reducers from 'reducers';
 
-export type StoreState = {
-  loading: ILoadingState;
-  error: IErrorState;
-};
+export type StoreState = ReturnType<typeof reducers>;
 
 export function getConfigStore() {
   if (__DEV__) {
